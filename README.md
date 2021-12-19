@@ -147,3 +147,207 @@ we sell!</small>
 
 </body>
 </html>
+
+*{
+ margin: 0;
+ padding: 0;
+ font-family: 'Bebas Neue', cursive;
+ font-family: 'Poppins', sans-serif;
+ box-sizing: border-box;
+}
+.header{
+ min-height: 100vh;
+ width: 100%;
+ background-image: lineargradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/header.jpg);
+ background-position: center;
+ background-size: cover;
+ position: relative;
+}
+nav{
+ display: flex;
+ padding: 2% 6%;
+ justify-content: space-between;
+ align-items: center;
+}
+nav img{
+ width: 150px;
+}
+.nav-links{
+ flex: 1;
+ text-align: right;
+}
+.nav-links ul li{
+ list-style: none;
+ display: inline-block;
+ padding: 8px 12px;
+ position: relative;
+}
+.nav-links ul li a{
+ color: #fff;
+ text-decoration: none;
+ font-size: 13px;
+}
+.nav-links ul li::after{
+ content: '';
+ width: 0%;
+ height: 2px;
+ background: #55ACEE;
+ display: block;
+ margin: auto;
+ transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+ width: 100%;
+}
+.text-box{
+ width: 90%;
+ color: #fff;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ text-align: center;
+}
+.text-box h1{
+ font-size: 62px;
+}
+text-box p{
+ margin: 10px 0 40px;
+ font-size: 14px;
+ color: #fff;
+}
+.hero-btn{
+ display: inline-block;
+ text-decoration: none;
+ color: #fff;
+ border: 1px solid #fff;
+ padding: 12px 34px;
+ font-size: 13px;
+ background: transparent;
+ position: relative;
+ cursor: pointer;
+ margin-top: 20px;
+}
+.hero-btn:hover{
+ border: 1px solid #55ACEE;
+ background: #55ACEE;
+ transition: 1s;
+}
+/*---- services -----*/
+.services{
+ width: 80%;
+ margin: auto;
+ text-align: center;
+ padding-top: 100px;
+}
+h1{
+ font-size: 36px;
+ font-weight: 600;
+}
+p{
+ color: #fff;
+ font-size: 14px;
+ font-weight: 300;
+ line-height: 22px;
+ padding: 10px;
+}
+.row{
+ margin-top: 5%;
+ display: flex;
+ justify-content: space-between;
+}
+.service-col{
+ color: #fff;
+ flex-basis: 31%;
+ background: rgba(4,9,30,0.7);
+ border-radius: 10px;
+ margin-bottom: 5%;
+ padding: 20px 12px;
+ box-sizing: border-box;
+}
+/*---- types of hats -----*/
+.types-hats{
+ width: 80%;
+ margin: auto;
+ text-align: center;
+ padding-top: 50px;
+}
+.hats-col{
+ color: #777;
+ flex-basis: 32%;
+ border-radius: 10px;
+ margin-bottom: 60px;
+ position: relative;
+ overflow: hidden;
+}
+hats-col img{
+ width: 100%;
+}
+.layer{
+ background: transparent;
+ height: 100%;
+ width: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+.layer:hover{
+ background: rgba(4,9,30,0.7);
+ transition: 1s;
+}
+/*---- footer -----*/
+.container{
+ max-width: 1170px;
+ background-color: #24262b;
+ margin: auto;
+}
+.row{
+ display: flex;
+ flex-wrap: wrap;
+}
+ul{
+ list-style: none;
+}
+.footer{
+ background-color: #24262b;
+ padding: 70px 0;
+}
+.footer-col{
+ width: 25%;
+ padding: 0 15px;
+}
+.footer-col h4{
+ font-size: 18px;
+ color: #ffffff;
+ text-transform: capitalize;
+ margin-bottom: 30px;
+ font-weight: 500;
+ position: relative;
+}
+.footer-col h4::before{
+ content: '';
+ position: absolute;
+ left: 0;
+ bottom: -10px;
+ background-color: #55ACEE;
+ height: 2px;
+ box-sizing: border-box;
+ width: 50px;
+}
+.footer-col ul li:not(:last-child){
+ margin-bottom: 10px;
+}
+.footer-col ul li a{
+ font-size: 16px;
+ text-transform: capitalize;
+ color: #ffffff;
+ text-decoration: none;
+ font-weight: 300;
+ color: #bbbbbb;
+ display: block;
+ transition: all 0.5s ease;
+}
+.footer-col ul li a:hover{
+ color: #ffffff;
+ padding-left: 8px;
+}
